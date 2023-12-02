@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <!--Boxicon-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Admin Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Create Account-->
+      <div class="sign-up">
+        <div class="sign-up-container">
+          <h3>Create account</h3>
+
+          <div class="cs-form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="cs-form-control" aria-label="email" />
+          </div>
+
+          <div class="cs-form-group">
+            <label for="Password">Password</label>
+            <input
+              type="password"
+              class="cs-form-control"
+              aria-label="password"
+            />
+          </div>
+
+          <div class="cs-form-group">
+            <button class="cs-form-submit">Create Account</button>
+          </div>
+
+          <span class="divider"></span>
+
+          <div class="cs-form-group">
+            <button class="social-login">
+              <span class="social-icon">
+                <img src="/images/icons8-google.svg" alt="" />
+              </span>
+              Create using Google Account
+            </button>
+          </div>
+        </div>
+
+        <p>Already have an account? <a href="#" onclick="login()">Login</a></p>
+      </div>
+
+      <!--Login-->
+      <div class="login active">
+        <div class="login-container">
+          <h3>Login</h3>
+          <div class="cs-form-group">
+            <label for="Email">Email</label>
+            <input type="email" class="cs-form-control" aria-label="email" />
+          </div>
+
+          <div class="cs-form-group">
+            <label for="Password">Password</label>
+            <a href="#" class="cs-forget-password" onclick="forgetPassword()"
+              >Forget Password</a
+            >
+            <input
+              type="password"
+              class="cs-form-control"
+              aria-label="password"
+            />
+          </div>
+
+          <div class="cs-form-group">
+            <button class="cs-form-submit">Login</button>
+          </div>
+
+          <span class="divider"></span>
+
+          <div class="cs-form-group">
+            <button class="social-login">
+              <span class="social-icon">
+                <img src="/images/icons8-google.svg" alt="" />
+              </span>
+              Login with Google Account
+            </button>
+          </div>
+        </div>
+
+        <p>Don't have an account? <a href="#" onclick="signup()">Sign up</a></p>
+      </div>
+
+      <!--Forget Password-->
+      <div class="forget-password">
+        <div class="forget-password-container">
+          <h3>Reset Password</h3>
+
+          <div class="cs-form-group">
+            <label for="Password">Password</label>
+            <input
+              type="password"
+              class="cs-form-control"
+              aria-label="password"
+            />
+          </div>
+
+          <div class="cs-form-group">
+            <button class="cs-form-submit">Send Reset Password Link</button>
+          </div>
+        </div>
+
+        <p>Already have an account? <a href="#" onclick="login()">Login</a></p>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.sign-up,
+.login,
+.forget-password{
+  position: relative;
+  padding: 10px;
+  width: 420px;
+  display: none;
+}
+
+.sign-up.active,
+.login.active,
+.forget-password.active{
+  display: block;
+}
+
+.sign-up p,
+.login p,
+.forget-password p{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.sign-up a,
+.login a,
+.forget-password a{
+  color: #106ba3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sign-up-container,
+.login-container,
+.forget-password-container{
+  position: relative;
+  background: #ffffff;
+  padding: 24px 20px;
+  border: 1px solid #d4d5d8;
+  box-shadow: 0px 1px 2px rgba(152, 152, 152, 0.2);
+}
+
+.sign-up-container h3,
+.login-container h3,
+.forget-password-container h3{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cs-form-group{
+  display: block;
+  padding: 4px 0;
+  line-height: 1.5rem;
+}
+
+.cs-form-group label{
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cs-form-group .cs-form-control{
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 8px 6px;
+  border: 1px solid #d4d5d8;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 2px rgba(152, 152, 152, 0.2);
+}
+
+.cs-form-group .cs-form-control:focus{
+  outline: 0;
+  border: 1px solid #106ba3;
+}
+
+.cs-form-group .cs-forget-password{
+  font-size: 14px;
+  float: right;
+  margin-top: -24px;
+}
+
+.cs-form-group .cs-form-submit{
+  width: 100%;
+  background: #106ba3;
+  color: #fff;
+  border: 1px solid #106ba3;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 8px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(152, 152, 152, 0.2);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cs-form-group .cs-form-submit:hover{
+  background: #10a366;
+  border-color: #10a366;
+  box-shadow: 0px 1px 2px rgba(152, 152, 152, 0.2);
+}
+
+.sign-up-container .divider,
+.login-container .divider{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1.2px;
+  background: #d4d5d8;
+  left: 0;
+  margin: 10px 0;
+}
+
+.cs-form-group .social-login{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #f5f8fa;
+  color: #000;
+  border: 1px solid #d4d5d8;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 8px;
+  box-shadow: 0px 1px 2px rgba(152, 152, 152, 0.2);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.social-login .social-icon{
+  display: flex;
+  align-items: center;
+}
+
+.social-login .social-icon img{
+  position: absolute;
+  left: 10px;
+  height: auto;
+  width: 20px;
+}
